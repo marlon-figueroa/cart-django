@@ -81,16 +81,16 @@ TEMPLATES = [
 WSGI_APPLICATION = 'app.wsgi.application'
 
 
-# Database
+# Database db_djfull
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'db_djfull',
-        'HOST': 'localhost',
+        'NAME': 'github_actions',
+        'HOST': '127.0.0.1',
         'USER': 'postgres',
-        'PASSWORD': '',
+        'PASSWORD': 'postgres',
         'PORT': 5432
     }
 }
