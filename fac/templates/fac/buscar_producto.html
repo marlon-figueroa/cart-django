@@ -40,7 +40,7 @@
                                     <td>
                                         {% if item.existencia > 0 and item.estado %}
                                         <button class="btn btn-warning btn-circle" id="btnSelect" 
-                                        onclick="seleccionarProducto({{item.id}},'{{item.codigo}}','{{item.descripcion}}',{{item.precio}})">
+                                        onclick="seleccionarProducto({{item.id}},'{{item.codigo}}','{{item.descripcion}}',{{item.precio}},{{item.existencia}})">
                                             <i class="far fa-hand-pointer"></i>
                                         </button>
                                         {% endif %}
@@ -82,9 +82,10 @@
     });
     $('#tblProducto').bootstrapTable();
 
-    function seleccionarProducto(id,codigo,descripcion,precio){
+    function seleccionarProducto(id,codigo,descripcion,precio,existencia){
         $("#codigo").val(codigo);
         $("#descripcion").val(descripcion);
+        $("#existencia").val(existencia);
         $("#precio").val(precio);
         $("#btnCancelar").click();
         $("#codigo").select();

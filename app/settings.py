@@ -87,10 +87,10 @@ WSGI_APPLICATION = 'app.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'github_actions',
+        'NAME': 'db_djfull',
         'HOST': '127.0.0.1',
         'USER': 'postgres',
-        'PASSWORD': 'postgres',
+        'PASSWORD': '',
         'PORT': 5432
     }
 }
