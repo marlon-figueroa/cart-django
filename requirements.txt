@@ -15,7 +15,7 @@ pylint==2.4.4
 PyPDF2==1.27.9
 python-decouple==3.3
 pytz==2020.1
-reportlab==3.6.10
+reportlab==3.6.13
 six==1.12.0
 sqlparse==0.3.0
 webencodings==0.5.1
